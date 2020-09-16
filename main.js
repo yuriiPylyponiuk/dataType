@@ -5,7 +5,7 @@
 // зробити перевірку чи не обманює вас юзер і перевіряти 
 // чи не прийшов вам null or undefined. 
 
-let userMoney = +prompt('Скільки у вас є гривень?', 100);
+/*let userMoney = +prompt('Скільки у вас є гривень?', 100);
 let dolarKoef, euroKoef, brendExsKoef, goldKoef;
 
 if(userMoney != null || userMoney != undefined ){
@@ -26,7 +26,7 @@ if(userMoney != null || userMoney != undefined ){
 		alert('Виберіть інструмент для конвертації ваших грошей');
 	};
 };
-
+*/
 //3. Спитатись у юзера суму замовлення і вивести результат з урахуванням 
 //знижки : до 500 гривень знижка -1 %, від 500 до 1000 - 5%,
 // більше 1000 - 10% та подарунковий сертифікат на 200 гривень у подарунок! 
@@ -106,7 +106,7 @@ if(userNumber.length == 3){
 // буде при нажиманні цифри разом з шифтом.
 
 
-let arrWithShift = '!@#$%^&*()_+';
+/*let arrWithShift = '!@#$%^&*()_+';
 let arrWIthoutShift = '1234567890-=';
 let userButton = prompt('Введіть одну кнопоку від 1 до = на клавіатурі');
 
@@ -117,7 +117,38 @@ for(let i=0; i <= arrWIthoutShift.length; i++){
 	if(arrWIthoutShift[i] == userButton){	
 		alert(`А якщо нажати Shift буде такий символ:   ${arrWithShift[i]}`);
 	}
+}*/
+
+
+let userButton = prompt('Введіть одну кнопоку від 1 до = на клавіатурі');
+
+if (userButton == '1') {
+	alert('А якщо нажати Shift буде такий символ:' + '   !');
+}else if (userButton == '2') {
+	alert('А якщо нажати Shift буде такий символ:' + '   @');
+}else if (userButton == '3') {
+	alert('А якщо нажати Shift буде такий символ:' + '   #');
+}else if (userButton == '4') {
+	alert('А якщо нажати Shift буде такий символ:' + '   $');
+}else if (userButton == '5') {
+	alert('А якщо нажати Shift буде такий символ:' + '   %');
+}else if (userButton == '6') {
+	alert('А якщо нажати Shift буде такий символ:' + '   ^');
+}else if (userButton == '7') {
+	alert('А якщо нажати Shift буде такий символ:' + '   &');
+}else if (userButton == '8') {
+	alert('А якщо нажати Shift буде такий символ:' + '   *');
+}else if (userButton == '9') {
+	alert('А якщо нажати Shift буде такий символ:' + '   (');
+}else if (userButton == '0') {
+	alert('А якщо нажати Shift буде такий символ:' + '   )');
+}else if (userButton == '-') {
+	alert('А якщо нажати Shift буде такий символ:' + '   _');
+}else if (userButton == '=') {
+	alert('А якщо нажати Shift буде такий символ:' + '   +');
 }
+
+
 //7. ǿтворити масив у якому буде 3 юзера описані як обєкти з
 //такими полями - age, name, hobby (теж повинно бути
 //масивом ).
