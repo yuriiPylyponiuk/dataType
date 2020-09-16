@@ -5,25 +5,27 @@
 // зробити перевірку чи не обманює вас юзер і перевіряти 
 // чи не прийшов вам null or undefined. 
 
-/*let userMoney = +prompt('Скільки у вас є гривень?', 100);
+let userMoney = +prompt('Скільки у вас є гривень?', 100);
 let dolarKoef, euroKoef, brendExsKoef, goldKoef;
 
-if(confirm('Переводити в долари?')){
-	dolarKoef = 28;
-	alert(userMoney/dolarKoef.toFixed(2));
-}else if (confirm('Переводити в євро?')) {
-	euroKoef = 33;
-	alert((userMoney/euroKoef).toFixed(2));
-}else if (confirm('Переводити в нафту?')) {
-	brendExsKoef = 50;
-	dolarKoef = 28;
-	alert((userMoney/(brendExsKoef*dolarKoef)).toFixed(2));
-}else if (confirm('Переводити в золотл?')) {
-	goldKoef = 1730;
-	alert((userMoney/goldKoef).toFixed(2));
-}else{
-	alert('Виберіть інструмент для конвертації ваших грошей');
-};*/
+if(userMoney != null || userMoney != undefined ){
+	if(confirm('Переводити в долари?')){
+		dolarKoef = 28;
+		alert(userMoney/dolarKoef.toFixed(2));
+	}else if (confirm('Переводити в євро?')) {
+		euroKoef = 33;
+		alert((userMoney/euroKoef).toFixed(2));
+	}else if (confirm('Переводити в нафту?')) {
+		brendExsKoef = 50;
+		dolarKoef = 28;
+		alert((userMoney/(brendExsKoef*dolarKoef)).toFixed(2));
+	}else if (confirm('Переводити в золотл?')) {
+		goldKoef = 1730;
+		alert((userMoney/goldKoef).toFixed(2));
+	}else{
+		alert('Виберіть інструмент для конвертації ваших грошей');
+	};
+};
 
 //3. Спитатись у юзера суму замовлення і вивести результат з урахуванням 
 //знижки : до 500 гривень знижка -1 %, від 500 до 1000 - 5%,
