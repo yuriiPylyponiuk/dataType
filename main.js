@@ -90,17 +90,20 @@ if(confirm('Ви готові пройти тест?')){
 
 //5. Запитатись у користувача 3 значне число та сказати чи є у ньому однакові цифри 
 
-/*let userNumber = prompt('Введіть трьох значне число.', 123);
+let userNumber = prompt('Введіть трьох значне число.', 123);
 
 if(userNumber.length == 3){
 	if(userNumber[0] == userNumber[1] || userNumber[1] == userNumber[2] || userNumber[0] == userNumber[2]){
-		alert(`Ваше число має одинакові числа ${userNumber}`);
-	}else if (userNumber == userNumber) {
-		alert(`Усі три числа співпали`);
+		if (userNumber[0] == userNumber[1] && userNumber[1] == userNumber[2]) {
+			alert(`Усі три числа співпали`);
+		}else{
+			alert(`Ваше число має одинакові числа ${userNumber}`);
+		}
+	}else {
+		alert('Ваші числа не співпали');
+		alert('Введіть трьох значне число');
 	};
-}else {
-	alert('Введіть трьох значне число');
-};*/
+};
 
 //6. Запитатись у юзера одну кнопоку від 1 до = на клавіатурі та вивести що
 // буде при нажиманні цифри разом з шифтом.
@@ -120,7 +123,7 @@ for(let i=0; i <= arrWIthoutShift.length; i++){
 }*/
 
 
-let userButton = prompt('Введіть одну кнопоку від 1 до = на клавіатурі');
+/*let userButton = prompt('Введіть одну кнопоку від 1 до = на клавіатурі');
 
 if (userButton == '1') {
 	alert('А якщо нажати Shift буде такий символ:' + '   !');
@@ -147,7 +150,7 @@ if (userButton == '1') {
 }else if (userButton == '=') {
 	alert('А якщо нажати Shift буде такий символ:' + '   +');
 }
-
+*/
 
 //7. ǿтворити масив у якому буде 3 юзера описані як обєкти з
 //такими полями - age, name, hobby (теж повинно бути
